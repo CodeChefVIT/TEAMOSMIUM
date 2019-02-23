@@ -4,11 +4,16 @@ const router = express.Router();
 
 // =============================================================
 
-router.post("/", isLoggedIn,(req, res) => {
-    const ip = convertToCSV(req.body);
-    fs.writeFile('public/input.csv', ip, err => console.log(err));
+router.get("/", isLoggedIn, (req,res) => {
+    res.render('input', {});
+});
 
-    res.send("Request teminated...");
+router.post("/", isLoggedIn,async (req, res) => {
+    req.body.Loan_ID = "LP8086";
+    const ip = convertToCSV(req.body);
+    fs.writeFileSync('public/input.csv', ip, err => console.log(err));
+
+    res.redirect("/result");
 });
 
 // =============================================================

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<link rel="stylesheet" href="Styles/landing.css">
+<link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Merriweather|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+<title>ऋण-Manthan</title>
+</head>
+<body class="bg-dark" style="background:url(https://images.unsplash.com/photo-1514544086895-dfb2d2969697?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark" id="navbar">
+       <div class="container text-light">
+           <a href="" class="navbar-brand"><i class="fas fa-hand-holding-usd m-1"></i> ऋण~Manthan</a>
+           <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav2">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav2">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right ml-auto">
+                            <li><a href="" class="nav-link">Login <span class="fas fa-sign-in-alt"></span></a></li>
+                            <li><a href="" class="nav-link">Sign Up <i class="fas fa-user-plus"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="jumbotron" style="background-color:transparent">
+            <div class="row">
+            <div class="col-6 text-light">
+                <h1 class="display-4" style="font-family: 'Merriweather', serif;"><i class="fas fa-hand-holding-usd m-1"></i>ऋण~Manthan</h1>
+                    
+                <p class="lead font-weight-bold m-5"> ऋण~Manthan is a data analysis service, that analyzes the general profile of the loan appplicant,and computationally estimates the loan-repayment probability.</p>
+                
+                
+                
+            </div>
+            <div class="col-6">
+                    <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                              <a class="nav-item nav-link mx-auto text-light" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">Login</a>
+                              <a class="nav-item nav-link mx-auto text-light" id="nav-howtouse-tab" data-toggle="tab" href="#nav-howtouse" role="tab" aria-controls="nav-howtouse" aria-selected="false">How To Use</a>
+                            </div>
+                          </nav>
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                                    <div class="container border rounded p-5 my-5 text-light bg-dark" style="max-width: 400px;">
+    
+                                            <form action="/login" method="POST" class="form-group">
+                                                <h3 class="text-center">Sign in</h3>
+                                                <div class="form-group">
+                                                        <label for="empid">EmployeeID </label>
+                                                        <input type="text" name="username" class="form-control" id="empid" placeholder="Enter your EmployeeID">
+                                                </div>
+                                                <div class="form-group">
+                                                        <label for="password">Password </label>
+                                                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                                                    </div>
+                                                    <div class="form-group">
+                                    
+                                                        <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                            <label class="custom-control-label" for="customCheck3">Remember Me</label>
+                                                        </div>
+                                                    </div>
+                                                
+                                                <div class="form-group">
+                                                        <button class="btn btn-block btn-info btn-lg">Sign-Up</button>
+                                                </div>
+                                    
+                                                <p class="text-center m-2">Not a member?
+                                                    <a href="" class="text-info">Register</a>
+                                                </p>
+                                            </form>
+                                        </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-howtouse" role="tabpanel" aria-labelledby="nav-howtouse-tab">
+                                <div class="container p-4 my-5 border rounded text-light bg-dark">
+
+                                    <ul style="font-family: 'ZCOOL QingKe HuangYou', cursive;">
+                                        <li class="lead m-3">Step1:Login using your UserName and Password.</li>
+                                        <li class="lead m-3">Step2:Input the details of the Applicant.</li>
+                                        <li class="lead m-3">Step3:Click Submit</li>
+                                        <li class="lead m-3">Step4:Check your result!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                          </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    
+
+
+<script src="Scripts/landing.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</body>
+</html>

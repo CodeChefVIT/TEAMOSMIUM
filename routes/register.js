@@ -3,6 +3,10 @@ const passport = require('passport');
 const { User } = require('../models');
 const router = express.Router();
 // =============================================================
+router.get("/", (req, res) => {
+    res.render('register', {});
+});
+
 router.post("/", (req, res) => {
     User.register(new User({username: req.body.username}),
     req.body.password, (err,user) => {

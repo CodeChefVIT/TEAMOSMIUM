@@ -1,2 +1,2 @@
-name,email,pwd1,pwd2,
-danish,danish@gmail.com,bhqw,bhqw,
+Loan_ID,Gender,Dependents,Married,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term,Credit_History,
+a87fe025-dd8f-4b89-b47b-47423a840a5a,Male,2,Yes,Graduate,Yes,10,20,30,360,1,
